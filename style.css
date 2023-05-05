@@ -1,0 +1,150 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 10px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  background-color: silver;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 98%;
+  height: 150rem;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 10rem;
+  display: flex;
+  background-image: url("images/luke-chesser-pJadQetzTkI-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar .img-navbar {
+  width: 6rem;
+  height: 6rem;
+  margin: 3rem;
+  border-radius: 0.3rem;
+}
+.navbar li {
+  display: inline-block;
+  position: relative;
+  left: 55rem;
+  top: 3rem;
+  bottom: 3rem;
+  padding: 2rem;
+}
+.navbar li a {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 4s;
+}
+.navbar li a:hover {
+  color: white;
+  transition-duration: 4ms;
+  transform: scale(1.3);
+}
+
+.section-one {
+  position: relative;
+  top: 2rem;
+  left: 10%;
+  border-radius: 0.5rem;
+}
+.section-one img {
+  width: 40%;
+  height: 20rem;
+  border-radius: 0.7rem;
+}
+.section-title {
+  position: absolute;
+  bottom: -55rem;
+  left: 1.5rem;
+  padding: 2.5rem;
+}
+.section-title .title {
+  font-size: 2.3rem;
+  color: grey;
+  line-height: 2.7rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 1.7rem;
+  box-shadow: 0 0.3rem 2.8rem 1.7rem gray;
+}
+.footer {
+  background-color: gray;
+  width: 100%;
+  height: 6rem;
+  color: black;
+  position: relative;
+  padding: 1.1;
+  top: 15rem;
+}
+.footer .footer-title {
+  position: relative;
+  top: 2rem;
+  left: 10rem;
+  text-align: center;
+  padding: 0.4rem;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2.3rem;
+}
+@media screen and (max-width: 500px) {
+  .navbar,
+  .section,
+  .section-title,
+  .footer {
+    min-width: 177rem;
+  }
+  body {
+    width: 100%;
+  }
+  .img-navbar {
+    position: relative;
+    left: 16rem;
+    top: -1rem;
+    border-radius: 5rem;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar li {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 3rem;
+    bottom: 3rem;
+    padding: 2rem;
+  }
+  .section-one {
+    position: relative;
+    top: 1rem;
+    left: 10%;
+    right: 10%;
+    width: 100%;
+    height: 25rem;
+    margin: 0 -18rem;
+  }
+  .section-one img {
+    width: 50%;
+    height: 25rem;
+  }
+  .section-title,
+  .footer {
+    display: none;
+  }
+  .navbar li a {
+    font-size: 1.5rem;
+    position: relative;
+    top: -1.5rem;
+  }
+}
